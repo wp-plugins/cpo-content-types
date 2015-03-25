@@ -1,0 +1,23 @@
+
+/* POST LISTINGS */
+.column-ctct-image { width:80px; }
+.column-ctct-image img { border-radius:5px; }
+
+
+/* FONTS */
+.fontawesome { font-family: 'fontawesome'; }
+
+
+/* Metaboxes */
+.ctct-metabox { overflow:hidden; margin:20px 10px;}
+.ctct-metabox .name { float:left; width:150px; padding:5px 0px; font-family:Century Gothic, Verdana, Arial; font-weight:bold; }
+.ctct-metabox .field { margin-left:180px; max-width:340px; min-width:200px; }
+.ctct-metabox .desc { float:left; margin:6px 0px 0px 180px; clear:both; color:#666; font-size:11px; font-weight:normal; }
+/* Wide Fields */
+.ctct-metabox-wide .name { float:none; width:auto; }
+.ctct-metabox-wide .field { margin-left:0; max-width:100%; }
+.ctct-metabox.ctct-metabox-wide .desc { float:none; margin:6px 0 0 0; }
+/* Form Fields */
+.ctct-metabox input[type=text] { width:95%; }
+.ctct-metabox textarea { font-family:monospace; width:95%; height:100px; max-height:350px; min-height:100px; resize:vertical; }
+.ctct-metabox select { width:95%; }
