@@ -1,11 +1,7 @@
 <?php
 
-//SLIDES POST TYPE DEFINITION
-//Slides are used as the opening content piece in the homepage
-add_action('init', 'ctct_cpost_slides');
-add_filter('manage_edit-cpo_slide_columns', 'ctct_cpost_slides_columns');
-
 //Define slides post type
+add_action('init', 'ctct_cpost_slides');
 if(!function_exists('ctct_cpost_slides')){
 	function ctct_cpost_slides(){
 		//Set up labels
@@ -38,6 +34,7 @@ if(!function_exists('ctct_cpost_slides')){
 }
 
 //Define admin columns in slides post type	
+add_filter('manage_edit-cpo_slide_columns', 'ctct_cpost_slides_columns');
 if(!function_exists('ctct_cpost_slides_columns')){
 	function ctct_cpost_slides_columns($columns){
 		$columns = array(

@@ -24,12 +24,14 @@ if(!function_exists('ctct_cpost_portfolio')){
 		'not_found_in_trash' => __('No portfolio items found in the trash.', 'ctct'), 
 		'parent_item_colon' => '');
 		
+		$slug = ctct_get_option('slug_portfolio');
+		if($slug == '') $slug = 'portfolio-item';
 		$fields = array('labels' => $labels,
 		'public' => true,
 		'publicly_queryable' => true,
 		'show_ui' => true, 
 		'query_var' => true,
-		'rewrite' => array('slug' => apply_filters('ctct_slug_portfolio', 'portfolio-item')),
+		'rewrite' => array('slug' => apply_filters('ctct_slug_portfolio', $slug)),
 		'capability_type' => 'post',
 		'hierarchical' => false,
 		'menu_icon' => 'dashicons-portfolio',
@@ -73,13 +75,15 @@ if(!function_exists('ctct_tax_portfoliocategory')){
 		'not_found_in_trash' => __('No portfolio categories were found in the trash.', 'ctct'), 
 		'parent_item_colon' => '');
 		
+		$slug = ctct_get_option('slug_portfolio_category');
+		if($slug == '') $slug = 'portfolio-category';
 		$fields = array(
 		'labels' => $labels,
 		'public' => true,
 		'show_ui' => true,
 		'show_in_nav_menus' => true,
 		'show_tagcloud' => true,
-		'rewrite' => array('slug' => apply_filters('ctct_slug_portfolio_category', 'portfolio-category')),
+		'rewrite' => array('slug' => apply_filters('ctct_slug_portfolio_category', $slug)),
 		'hierarchical' => true); 
 		
 		register_taxonomy('cpo_portfolio_category', 'cpo_portfolio', $fields);
@@ -103,13 +107,15 @@ if(!function_exists('ctct_tax_portfoliotag')){
 		'not_found_in_trash' => __('No portfolio tags were found in the trash.', 'ctct'), 
 		'parent_item_colon' => '');
 		
+		$slug = ctct_get_option('slug_portfolio_tag');
+		if($slug == '') $slug = 'portfolio-tag';
 		$fields = array(
 		'labels' => $labels,
 		'public' => true,
 		'show_ui' => true,
 		'show_in_nav_menus' => true,
 		'show_tagcloud' => true,
-		'rewrite' => array('slug' => apply_filters('ctct_slug_portfolio_tag', 'portfolio-tag')),
+		'rewrite' => array('slug' => apply_filters('ctct_slug_portfolio_tag', $slug)),
 		'hierarchical' => false); 
 		
 		register_taxonomy('cpo_portfolio_tag', 'cpo_portfolio', $fields);

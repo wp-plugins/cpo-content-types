@@ -1,11 +1,8 @@
 <?php
 
-//FEATURES POST TYPE DEFINITION
-//Features are the building blocks of the homepage, used in many different styles
-add_action('init', 'ctct_cpost_features');
-add_filter('manage_edit-cpo_feature_columns', 'ctct_cpost_features_columns');
 
 //Define features post type
+add_action('init', 'ctct_cpost_features');
 if(!function_exists('ctct_cpost_features')){
 	function ctct_cpost_features(){
 		//Set up labels
@@ -38,6 +35,7 @@ if(!function_exists('ctct_cpost_features')){
 }
 
 //Define admin columns in features post type	
+add_filter('manage_edit-cpo_feature_columns', 'ctct_cpost_features_columns');
 if(!function_exists('ctct_cpost_features_columns')){
 	function ctct_cpost_features_columns($columns){
 		$columns = array(

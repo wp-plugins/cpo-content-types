@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CPO Extensions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-24 10:50+0100\n"
-"PO-Revision-Date: 2015-03-24 10:53+0100\n"
-"Last-Translator: CPO <mvicedo@cpo.es>\n"
+"POT-Creation-Date: 2015-05-22 21:46+0100\n"
+"PO-Revision-Date: 2015-05-23 17:06+0100\n"
+"Last-Translator: Manuel Vicedo <contact@cpothemes.com>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
@@ -16,541 +16,690 @@ msgstr ""
 "X-Generator: Poedit 1.5.5\n"
 "X-Poedit-SearchPath-0: ../.\n"
 
-#: .././cposts/cpost_features.php:14
-msgid "Features"
-msgstr "Características"
+#: .././cposts/cpost_clients.php:14
+msgid "Clients"
+msgstr "Clientes"
 
-#: .././cposts/cpost_features.php:15
-msgid "Feature"
-msgstr "Característica"
+#: .././cposts/cpost_clients.php:15
+msgid "Client"
+msgstr "Cliente"
 
-#: .././cposts/cpost_features.php:16
-msgid "Add Feature"
-msgstr "Añadir Característica"
+#: .././cposts/cpost_clients.php:16
+msgid "Add Client"
+msgstr "Añadir Cliente"
 
-#: .././cposts/cpost_features.php:17
-msgid "Add New Feature"
-msgstr "Añadir Nueva Característica"
+#: .././cposts/cpost_clients.php:17
+msgid "Add New Client"
+msgstr "Añadir Nuevo Cliente"
 
-#: .././cposts/cpost_features.php:18
-msgid "Edit Feature"
-msgstr "Editar Característica"
+#: .././cposts/cpost_clients.php:18
+msgid "Edit Client"
+msgstr "Editar Cliente"
 
-#: .././cposts/cpost_features.php:19
-msgid "New Feature"
-msgstr "Nueva Característica"
+#: .././cposts/cpost_clients.php:19
+msgid "New Client"
+msgstr "Nuevo Cliente"
 
-#: .././cposts/cpost_features.php:20
-msgid "View Features"
-msgstr "Ver Características"
+#: .././cposts/cpost_clients.php:20
+msgid "View Client"
+msgstr "Ver Cliente"
 
-#: .././cposts/cpost_features.php:21
-msgid "Search Features"
-msgstr "Buscar Características"
+#: .././cposts/cpost_clients.php:21
+msgid "Search Clients"
+msgstr "Buscar Cliente"
 
-#: .././cposts/cpost_features.php:22
-msgid "No features found."
-msgstr "No se han encontrado características."
+#: .././cposts/cpost_clients.php:22
+msgid "No clients found."
+msgstr "No se han encontrado clientes."
 
-#: .././cposts/cpost_features.php:23
-msgid "No features found in the trash."
-msgstr "No se han encontrado características en la papelera."
+#: .././cposts/cpost_clients.php:23
+msgid "No clients found in the trash."
+msgstr "No se han encontrado clientes en la papelera."
 
-#: .././cposts/cpost_features.php:47 .././cposts/cpost_portfolio.php:49
-#: .././cposts/cpost_slides.php:47
+#: .././cposts/cpost_clients.php:47 .././cposts/cpost_features.php:45
+#: .././cposts/cpost_portfolio.php:50 .././cposts/cpost_products.php:51
+#: .././cposts/cpost_services.php:52 .././cposts/cpost_slides.php:45
+#: .././cposts/cpost_team.php:46 .././cposts/cpost_testimonials.php:47
 msgid "Image"
 msgstr "Imagen"
 
-#: .././cposts/cpost_features.php:48 .././cposts/cpost_portfolio.php:50
-#: .././cposts/cpost_slides.php:48
+#: .././cposts/cpost_clients.php:48 .././cposts/cpost_features.php:46
+#: .././cposts/cpost_portfolio.php:51 .././cposts/cpost_products.php:52
+#: .././cposts/cpost_services.php:53 .././cposts/cpost_slides.php:46
+#: .././cposts/cpost_team.php:47 .././cposts/cpost_testimonials.php:48
 msgid "Title"
 msgstr "Título"
 
-#: .././cposts/cpost_features.php:49 .././cposts/cpost_portfolio.php:53
-#: .././cposts/cpost_slides.php:49
+#: .././cposts/cpost_clients.php:49 .././cposts/cpost_features.php:47
+#: .././cposts/cpost_portfolio.php:54 .././cposts/cpost_products.php:55
+#: .././cposts/cpost_services.php:56 .././cposts/cpost_slides.php:47
+#: .././cposts/cpost_team.php:49 .././cposts/cpost_testimonials.php:49
 msgid "Date"
 msgstr "Fecha"
 
-#: .././cposts/cpost_features.php:50 .././cposts/cpost_portfolio.php:54
-#: .././cposts/cpost_slides.php:50
-msgid "Comments"
-msgstr "Comentarios"
-
-#: .././cposts/cpost_features.php:51 .././cposts/cpost_portfolio.php:55
-#: .././cposts/cpost_slides.php:51
+#: .././cposts/cpost_clients.php:50 .././cposts/cpost_features.php:49
+#: .././cposts/cpost_portfolio.php:56 .././cposts/cpost_products.php:57
+#: .././cposts/cpost_services.php:58 .././cposts/cpost_slides.php:49
+#: .././cposts/cpost_team.php:50 .././cposts/cpost_testimonials.php:50
 msgid "Author"
 msgstr "Autor"
 
-#: .././cposts/cpost_portfolio.php:16 .././cposts/cpost_portfolio.php:17
+#: .././cposts/cpost_features.php:12
+msgid "Features"
+msgstr "Características"
+
+#: .././cposts/cpost_features.php:13
+msgid "Feature"
+msgstr "Característica"
+
+#: .././cposts/cpost_features.php:14
+msgid "Add Feature"
+msgstr "Añadir Característica"
+
+#: .././cposts/cpost_features.php:15
+msgid "Add New Feature"
+msgstr "Añadir Nueva Característica"
+
+#: .././cposts/cpost_features.php:16
+msgid "Edit Feature"
+msgstr "Editar Característica"
+
+#: .././cposts/cpost_features.php:17
+msgid "New Feature"
+msgstr "Nueva Característica"
+
+#: .././cposts/cpost_features.php:18
+msgid "View Features"
+msgstr "Ver Características"
+
+#: .././cposts/cpost_features.php:19
+msgid "Search Features"
+msgstr "Buscar Características"
+
+#: .././cposts/cpost_features.php:20
+msgid "No features found."
+msgstr "No se han encontrado características."
+
+#: .././cposts/cpost_features.php:21
+msgid "No features found in the trash."
+msgstr "No se han encontrado características en la papelera."
+
+#: .././cposts/cpost_features.php:48 .././cposts/cpost_portfolio.php:55
+#: .././cposts/cpost_products.php:56 .././cposts/cpost_services.php:57
+#: .././cposts/cpost_slides.php:48
+msgid "Comments"
+msgstr "Comentarios"
+
+#: .././cposts/cpost_portfolio.php:15 .././cposts/cpost_portfolio.php:16
+#: .././includes/metadata.php:9
 msgid "Portfolio"
 msgstr "Portafolio"
 
-#: .././cposts/cpost_portfolio.php:18
+#: .././cposts/cpost_portfolio.php:17
 msgid "Add Portfolio Item"
-msgstr "Añadir Nuevo Portafolio"
+msgstr "Añadir Portafolio"
 
-#: .././cposts/cpost_portfolio.php:19
+#: .././cposts/cpost_portfolio.php:18
 msgid "Add New Portfolio Item"
 msgstr "Añadir Nuevo Portafolio"
 
-#: .././cposts/cpost_portfolio.php:20
+#: .././cposts/cpost_portfolio.php:19
 msgid "Edit Portfolio Item"
 msgstr "Editar Portafolio"
 
-#: .././cposts/cpost_portfolio.php:21
+#: .././cposts/cpost_portfolio.php:20
 msgid "New Portfolio Item"
 msgstr "Nuevo Portafolio"
 
-#: .././cposts/cpost_portfolio.php:22
+#: .././cposts/cpost_portfolio.php:21
 msgid "View Portfolio"
 msgstr "Ver Portafolio"
 
-#: .././cposts/cpost_portfolio.php:23
+#: .././cposts/cpost_portfolio.php:22
 msgid "Search Portfolio"
 msgstr "Buscar Portafolio"
 
-#: .././cposts/cpost_portfolio.php:24
+#: .././cposts/cpost_portfolio.php:23
 msgid "No portfolio items found."
 msgstr "No se han encontrado elementos del portafolio."
 
-#: .././cposts/cpost_portfolio.php:25
+#: .././cposts/cpost_portfolio.php:24
 msgid "No portfolio items found in the trash."
 msgstr "No se han encontrado elementos del portafolio en la papelera."
 
-#: .././cposts/cpost_portfolio.php:51
+#: .././cposts/cpost_portfolio.php:52 .././cposts/cpost_products.php:53
+#: .././cposts/cpost_services.php:54
 msgid "Categories"
 msgstr "Categorías"
 
-#: .././cposts/cpost_portfolio.php:52
+#: .././cposts/cpost_portfolio.php:53 .././cposts/cpost_products.php:54
+#: .././cposts/cpost_services.php:55
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: .././cposts/cpost_portfolio.php:65
+#: .././cposts/cpost_portfolio.php:66
 msgid "Portfolio Categories"
 msgstr "Categorías"
 
-#: .././cposts/cpost_portfolio.php:66
+#: .././cposts/cpost_portfolio.php:67
 msgid "Portfolio Category"
 msgstr "Categoría"
 
-#: .././cposts/cpost_portfolio.php:67 .././cposts/cpost_portfolio.php:70
+#: .././cposts/cpost_portfolio.php:68 .././cposts/cpost_portfolio.php:71
 msgid "New Portfolio Category"
 msgstr "Nueva Categoría"
 
-#: .././cposts/cpost_portfolio.php:68
+#: .././cposts/cpost_portfolio.php:69
 msgid "Add Portfolio Category"
 msgstr "Añadir Categoría"
 
-#: .././cposts/cpost_portfolio.php:69
+#: .././cposts/cpost_portfolio.php:70
 msgid "Edit Portfolio Category"
 msgstr "Editar Categoría"
 
-#: .././cposts/cpost_portfolio.php:71
+#: .././cposts/cpost_portfolio.php:72
 msgid "View Portfolio Category"
 msgstr "Ver Categoría"
 
-#: .././cposts/cpost_portfolio.php:72
+#: .././cposts/cpost_portfolio.php:73
 msgid "Search Portfolio Categories"
 msgstr "Buscar Categoría"
 
-#: .././cposts/cpost_portfolio.php:73
+#: .././cposts/cpost_portfolio.php:74
 msgid "No portfolio categories were found."
 msgstr "No se han encontrado categorías."
 
-#: .././cposts/cpost_portfolio.php:74
+#: .././cposts/cpost_portfolio.php:75
 msgid "No portfolio categories were found in the trash."
 msgstr "No se han encontrado categorías en la papelera."
 
-#: .././cposts/cpost_portfolio.php:95
+#: .././cposts/cpost_portfolio.php:98
 msgid "Portfolio Tags"
 msgstr "Etiquetas"
 
-#: .././cposts/cpost_portfolio.php:96
+#: .././cposts/cpost_portfolio.php:99
 msgid "Portfolio Tag"
 msgstr "Etiqueta"
 
-#: .././cposts/cpost_portfolio.php:97 .././cposts/cpost_portfolio.php:100
+#: .././cposts/cpost_portfolio.php:100 .././cposts/cpost_portfolio.php:103
 msgid "New Portfolio Tag"
 msgstr "Nueva Etiqueta"
 
-#: .././cposts/cpost_portfolio.php:98
+#: .././cposts/cpost_portfolio.php:101
 msgid "Add Portfolio Tag"
 msgstr "Añadir Etiqueta"
 
-#: .././cposts/cpost_portfolio.php:99
+#: .././cposts/cpost_portfolio.php:102
 msgid "Edit Portfolio Tag"
 msgstr "Editar Etiqueta"
 
-#: .././cposts/cpost_portfolio.php:101
+#: .././cposts/cpost_portfolio.php:104
 msgid "View Portfolio Tag"
 msgstr "Ver Etiqueta"
 
-#: .././cposts/cpost_portfolio.php:102
+#: .././cposts/cpost_portfolio.php:105
 msgid "Search Portfolio Tags"
 msgstr "Buscar Etiqueta"
 
-#: .././cposts/cpost_portfolio.php:103
+#: .././cposts/cpost_portfolio.php:106
 msgid "No portfolio tags were found."
 msgstr "No se han encontrado etiquetas."
 
-#: .././cposts/cpost_portfolio.php:104
+#: .././cposts/cpost_portfolio.php:107
 msgid "No portfolio tags were found in the trash."
 msgstr "No se han encontrado etiquetas en la papelera."
 
-#: .././cposts/cpost_slides.php:14
+#: .././cposts/cpost_products.php:16 .././includes/metadata.php:12
+msgid "Products"
+msgstr "Productos"
+
+#: .././cposts/cpost_products.php:17
+msgid "Product"
+msgstr "Producto"
+
+#: .././cposts/cpost_products.php:18
+msgid "Add Product"
+msgstr "Añadir Producto"
+
+#: .././cposts/cpost_products.php:19
+msgid "Add New Product"
+msgstr "Añadir Nuevo Producto"
+
+#: .././cposts/cpost_products.php:20
+msgid "Edit Product"
+msgstr "Editar Producto"
+
+#: .././cposts/cpost_products.php:21
+msgid "New Product"
+msgstr "Nuevo Producto"
+
+#: .././cposts/cpost_products.php:22
+msgid "View Products"
+msgstr "Ver Productos"
+
+#: .././cposts/cpost_products.php:23
+msgid "Search Products"
+msgstr "Buscar Productos"
+
+#: .././cposts/cpost_products.php:24
+msgid "No products found."
+msgstr "No se han encontrado productos."
+
+#: .././cposts/cpost_products.php:25
+msgid "No products found in the trash."
+msgstr "No se han encontrado productos en la papelera."
+
+#: .././cposts/cpost_products.php:67
+msgid "Product Categories"
+msgstr "Categorías de producto"
+
+#: .././cposts/cpost_products.php:68
+msgid "Product Category"
+msgstr "Categoría de producto"
+
+#: .././cposts/cpost_products.php:69 .././cposts/cpost_products.php:72
+msgid "New Product Category"
+msgstr "Nueva Categoría"
+
+#: .././cposts/cpost_products.php:70
+msgid "Add Product Category"
+msgstr "Agregar Categoría"
+
+#: .././cposts/cpost_products.php:71
+msgid "Edit Product Category"
+msgstr "Editar Categoría"
+
+#: .././cposts/cpost_products.php:73
+msgid "View Product Category"
+msgstr "Ver Categoría de producto"
+
+#: .././cposts/cpost_products.php:74
+msgid "Search Product Categories"
+msgstr "Buscar Categorías de producto"
+
+#: .././cposts/cpost_products.php:75
+msgid "No products categories were found."
+msgstr "No se han encontrado categorías de producto."
+
+#: .././cposts/cpost_products.php:76
+msgid "No products categories were found in the trash."
+msgstr "No se han encontrado categorías de producto en la papelera."
+
+#: .././cposts/cpost_products.php:99
+msgid "Product Tags"
+msgstr "Etiquetas de Producto"
+
+#: .././cposts/cpost_products.php:100
+msgid "Product Tag"
+msgstr "Etiqueta de producto"
+
+#: .././cposts/cpost_products.php:101 .././cposts/cpost_products.php:104
+msgid "New Product Tag"
+msgstr "Nueva Etiqueta de Producto"
+
+#: .././cposts/cpost_products.php:102
+msgid "Add Product Tag"
+msgstr "Añadir Etiqueta de Producto"
+
+#: .././cposts/cpost_products.php:103
+msgid "Edit Product Tag"
+msgstr "Editar Etiqueta de Producto"
+
+#: .././cposts/cpost_products.php:105
+msgid "View Product Tag"
+msgstr "Ver Etiqueta de Producto"
+
+#: .././cposts/cpost_products.php:106
+msgid "Search Product Tags"
+msgstr "Buscar Etiquetas de Producto"
+
+#: .././cposts/cpost_products.php:107
+msgid "No product tags were found."
+msgstr "No se han encontrado etiqueta de producto."
+
+#: .././cposts/cpost_products.php:108
+msgid "No product tags were found in the trash."
+msgstr "No se han encontrado etiqueta de producto en la papelera."
+
+#: .././cposts/cpost_services.php:17 .././cposts/cpost_services.php:18
+#: .././includes/metadata.php:15
+msgid "Services"
+msgstr "Servicios"
+
+#: .././cposts/cpost_services.php:19
+msgid "Add Service"
+msgstr "Añadir Servicio"
+
+#: .././cposts/cpost_services.php:20
+msgid "Add New Service"
+msgstr "Añadir Nuevo Servicio"
+
+#: .././cposts/cpost_services.php:21
+msgid "Edit Service"
+msgstr "Editar Servicio"
+
+#: .././cposts/cpost_services.php:22
+msgid "New Service"
+msgstr "Nuevo Servicio"
+
+#: .././cposts/cpost_services.php:23
+msgid "View Service"
+msgstr "Ver Servicio"
+
+#: .././cposts/cpost_services.php:24
+msgid "Search Services"
+msgstr "Buscar Servicios"
+
+#: .././cposts/cpost_services.php:25
+msgid "No services found."
+msgstr "No se han encontrado servicios."
+
+#: .././cposts/cpost_services.php:26
+msgid "No services found in the trash."
+msgstr "No se han encontrado servicios en la papelera."
+
+#: .././cposts/cpost_services.php:68
+msgid "Service Categories"
+msgstr "Buscar Categorías de Servicio"
+
+#: .././cposts/cpost_services.php:69
+msgid "Service Category"
+msgstr "Categoría de Servicio"
+
+#: .././cposts/cpost_services.php:70 .././cposts/cpost_services.php:73
+msgid "New Service Category"
+msgstr "Nueva Categoría de Servicio"
+
+#: .././cposts/cpost_services.php:71
+msgid "Add Service Category"
+msgstr "Añadir Categoría de Servicio"
+
+#: .././cposts/cpost_services.php:72
+msgid "Edit Service Category"
+msgstr "Editar Categoría de Servicio"
+
+#: .././cposts/cpost_services.php:74
+msgid "View Service Category"
+msgstr "Ver Categoría de Servicio"
+
+#: .././cposts/cpost_services.php:75
+msgid "Search Service Categories"
+msgstr "Buscar Categorías de Servicio"
+
+#: .././cposts/cpost_services.php:76
+msgid "No services categories were found."
+msgstr "No se han encontrado categorías de servicio."
+
+#: .././cposts/cpost_services.php:77
+msgid "No services categories were found in the trash."
+msgstr "No se han encontrado categorías de servicio en la papelera."
+
+#: .././cposts/cpost_services.php:100
+msgid "Service Tags"
+msgstr "Etiquetas de Servicio"
+
+#: .././cposts/cpost_services.php:101
+msgid "Service Tag"
+msgstr "Etiqueta de Servicio"
+
+#: .././cposts/cpost_services.php:102 .././cposts/cpost_services.php:105
+msgid "New Service Tag"
+msgstr "Nueva Etiqueta de servicio"
+
+#: .././cposts/cpost_services.php:103
+msgid "Add Service Tag"
+msgstr "Añadir Etiqueta de Servicio"
+
+#: .././cposts/cpost_services.php:104
+msgid "Edit Service Tag"
+msgstr "Editar Etiqueta de Servicio"
+
+#: .././cposts/cpost_services.php:106
+msgid "View Service Tag"
+msgstr "Ver Etiqueta de Servicio"
+
+#: .././cposts/cpost_services.php:107
+msgid "Search Service Tags"
+msgstr "Buscar Etiquetas de Servicio"
+
+#: .././cposts/cpost_services.php:108
+msgid "No services tags were found."
+msgstr "No se han encontrado etiquetas de servicio."
+
+#: .././cposts/cpost_services.php:109
+msgid "No services tags were found in the trash."
+msgstr "No se han encontrado etiquetas de servicio en la papelera."
+
+#: .././cposts/cpost_slides.php:12
 msgid "Slides"
 msgstr "Diapositivas"
 
-#: .././cposts/cpost_slides.php:15
+#: .././cposts/cpost_slides.php:13
 msgid "Slide"
 msgstr "Diapositiva"
 
-#: .././cposts/cpost_slides.php:16 .././cposts/cpost_slides.php:19
+#: .././cposts/cpost_slides.php:14 .././cposts/cpost_slides.php:17
 msgid "New Slide"
 msgstr "Nueva Diapositiva"
 
-#: .././cposts/cpost_slides.php:17
+#: .././cposts/cpost_slides.php:15
 msgid "Add New Slide"
-msgstr "A&ntilde;adir Nueva Diapositiva"
+msgstr "Añadir Nueva Diapositiva"
 
-#: .././cposts/cpost_slides.php:18
+#: .././cposts/cpost_slides.php:16
 msgid "Edit Slide"
 msgstr "Editar Diapositiva"
 
-#: .././cposts/cpost_slides.php:20
+#: .././cposts/cpost_slides.php:18
 msgid "View Slide"
 msgstr "Ver Diapositiva"
 
-#: .././cposts/cpost_slides.php:21
+#: .././cposts/cpost_slides.php:19
 msgid "Search Slides"
 msgstr "Buscar Diapositivas"
 
-#: .././cposts/cpost_slides.php:22
+#: .././cposts/cpost_slides.php:20
 msgid "No slides were found."
 msgstr "No se han encontrado diapositivas."
 
-#: .././cposts/cpost_slides.php:23
+#: .././cposts/cpost_slides.php:21
 msgid "No slides were found in the trash."
 msgstr "No se han encontrado diapositivas en la papelera."
 
-#, fuzzy
-#~ msgid "Clients"
-#~ msgstr "Cliente"
-
-#, fuzzy
-#~ msgid "Client"
-#~ msgstr "Cliente"
-
-#, fuzzy
-#~ msgid "Add Client"
-#~ msgstr "Agregar Lema"
-
-#, fuzzy
-#~ msgid "Add New Client"
-#~ msgstr "A&ntilde;adir Nueva Diapositiva"
-
-#, fuzzy
-#~ msgid "Edit Client"
-#~ msgstr "Editar Diapositiva"
-
-#, fuzzy
-#~ msgid "New Client"
-#~ msgstr "Nueva Diapositiva"
-
-#, fuzzy
-#~ msgid "View Client"
-#~ msgstr "Ver Diapositiva"
-
-#, fuzzy
-#~ msgid "Search Clients"
-#~ msgstr "Buscar Diapositivas"
-
-#, fuzzy
-#~ msgid "No clients found."
-#~ msgstr "No se han encontrado lemas."
-
-#, fuzzy
-#~ msgid "No clients found in the trash."
-#~ msgstr "No se han encontrado anuncios en la papelera."
-
-#~ msgid "Products"
-#~ msgstr "Productos"
-
-#, fuzzy
-#~ msgid "Add New Product"
-#~ msgstr "Añadir Nuevo Anuncio"
-
-#, fuzzy
-#~ msgid "Edit Product"
-#~ msgstr "Editar Anuncio"
-
-#, fuzzy
-#~ msgid "View Products"
-#~ msgstr "Ver Anuncios"
-
-#, fuzzy
-#~ msgid "Search Products"
-#~ msgstr "Buscar Anuncios"
-
-#, fuzzy
-#~ msgid "No products found."
-#~ msgstr "No se han encontrado anuncios."
-
-#, fuzzy
-#~ msgid "No products found in the trash."
-#~ msgstr "No se han encontrado anuncios en la papelera."
-
-#, fuzzy
-#~ msgid "Product Categories"
-#~ msgstr "Buscar Categorías"
-
-#, fuzzy
-#~ msgid "Product Category"
-#~ msgstr "Editar Categoría"
-
-#, fuzzy
-#~ msgid "New Product Category"
-#~ msgstr "Nueva Categoría"
-
-#, fuzzy
-#~ msgid "Add Product Category"
-#~ msgstr "Agregar Categoría"
-
-#, fuzzy
-#~ msgid "Edit Product Category"
-#~ msgstr "Editar Categoría"
-
-#, fuzzy
-#~ msgid "View Product Category"
-#~ msgstr "Ver Categoría"
-
-#, fuzzy
-#~ msgid "Search Product Categories"
-#~ msgstr "Buscar Categorías"
-
-#, fuzzy
-#~ msgid "No products categories were found."
-#~ msgstr "No se han encontrado categorías."
-
-#, fuzzy
-#~ msgid "No products categories were found in the trash."
-#~ msgstr "No se han encontrado categorías en la papelera."
-
-#, fuzzy
-#~ msgid "Search Product Tags"
-#~ msgstr "Buscar Lemas"
-
-#, fuzzy
-#~ msgid "No product tags were found."
-#~ msgstr "No se han encontrado categorías."
-
-#, fuzzy
-#~ msgid "No product tags were found in the trash."
-#~ msgstr "No se han encontrado categorías en la papelera."
-
-#, fuzzy
-#~ msgid "Services"
-#~ msgstr "Buscar Anuncios"
-
-#, fuzzy
-#~ msgid "Add Service"
-#~ msgstr "Añadir Anuncio"
-
-#, fuzzy
-#~ msgid "Add New Service"
-#~ msgstr "A&ntilde;adir Nueva Diapositiva"
-
-#, fuzzy
-#~ msgid "Edit Service"
-#~ msgstr "Editar Diapositiva"
-
-#, fuzzy
-#~ msgid "New Service"
-#~ msgstr "Nueva Diapositiva"
-
-#, fuzzy
-#~ msgid "View Service"
-#~ msgstr "Ver Diapositiva"
-
-#, fuzzy
-#~ msgid "Search Services"
-#~ msgstr "Buscar Diapositivas"
-
-#, fuzzy
-#~ msgid "No services found."
-#~ msgstr "No se han encontrado anuncios."
-
-#, fuzzy
-#~ msgid "No services found in the trash."
-#~ msgstr "No se han encontrado anuncios en la papelera."
-
-#, fuzzy
-#~ msgid "Service Categories"
-#~ msgstr "Buscar Categorías"
-
-#, fuzzy
-#~ msgid "Service Category"
-#~ msgstr "Ver Categoría"
-
-#, fuzzy
-#~ msgid "New Service Category"
-#~ msgstr "Nueva Categoría"
-
-#, fuzzy
-#~ msgid "Add Service Category"
-#~ msgstr "Agregar Categoría"
-
-#, fuzzy
-#~ msgid "Edit Service Category"
-#~ msgstr "Editar Categoría"
-
-#, fuzzy
-#~ msgid "View Service Category"
-#~ msgstr "Ver Categoría"
-
-#, fuzzy
-#~ msgid "Search Service Categories"
-#~ msgstr "Buscar Categorías"
-
-#, fuzzy
-#~ msgid "No services categories were found."
-#~ msgstr "No se han encontrado categorías."
-
-#, fuzzy
-#~ msgid "No services categories were found in the trash."
-#~ msgstr "No se han encontrado categorías en la papelera."
-
-#, fuzzy
-#~ msgid "Service Tags"
-#~ msgstr "Buscar Lemas"
-
-#, fuzzy
-#~ msgid "Service Tag"
-#~ msgstr "Buscar Lemas"
-
-#, fuzzy
-#~ msgid "Add Service Tag"
-#~ msgstr "Agregar Nuevo Lema"
-
-#, fuzzy
-#~ msgid "Edit Service Tag"
-#~ msgstr "Editar Diapositiva"
-
-#, fuzzy
-#~ msgid "View Service Tag"
-#~ msgstr "Ver Diapositiva"
-
-#, fuzzy
-#~ msgid "Search Service Tags"
-#~ msgstr "Buscar Diapositivas"
-
-#, fuzzy
-#~ msgid "No services tags were found."
-#~ msgstr "No se han encontrado diapositivas."
-
-#, fuzzy
-#~ msgid "No services tags were found in the trash."
-#~ msgstr "No se han encontrado diapositivas en la papelera."
-
-#, fuzzy
-#~ msgid "Team Members"
-#~ msgstr "Miembro del Equipo"
-
-#~ msgid "Team Member"
-#~ msgstr "Miembro del Equipo"
-
-#~ msgid "Add Team Member"
-#~ msgstr "Agregar Miembro"
-
-#~ msgid "Add New Team Member"
-#~ msgstr "Añadir Nuevo Miembro"
-
-#~ msgid "Edit Team Member"
-#~ msgstr "Editar Miembro"
-
-#~ msgid "New Team Member"
-#~ msgstr "Nuevo Miembro"
-
-#, fuzzy
-#~ msgid "View Team Member"
-#~ msgstr "Ver Miembros"
-
-#~ msgid "Search Team Members"
-#~ msgstr "Buscar Miembro"
-
-#~ msgid "No team members found."
-#~ msgstr "No se han encontrado miembros."
-
-#~ msgid "No team members found in the trash."
-#~ msgstr "No se han encontrado miembros en la papelera."
-
-#, fuzzy
-#~ msgid "Member Groups"
-#~ msgstr "Detalles del Miembro"
-
-#, fuzzy
-#~ msgid "Member Group"
-#~ msgstr "Detalles del Miembro"
-
-#, fuzzy
-#~ msgid "New Member Group"
-#~ msgstr "Nuevo Miembro"
-
-#, fuzzy
-#~ msgid "Add Member Group"
-#~ msgstr "Agregar Miembro"
-
-#, fuzzy
-#~ msgid "Edit Member Group"
-#~ msgstr "Editar Miembro"
-
-#, fuzzy
-#~ msgid "View Member Group"
-#~ msgstr "Ver Miembros"
-
-#, fuzzy
-#~ msgid "Search Member Groups"
-#~ msgstr "Buscar Miembro"
-
-#, fuzzy
-#~ msgid "No member groups were found."
-#~ msgstr "No se han encontrado categorías."
-
-#, fuzzy
-#~ msgid "No member groups were found in the trash."
-#~ msgstr "No se han encontrado categorías en la papelera."
-
-#, fuzzy
-#~ msgid "Testimonials"
-#~ msgstr "Testimonios"
-
-#, fuzzy
-#~ msgid "Testimonial"
-#~ msgstr "Testimonios"
-
-#~ msgid "Add Testimonial"
-#~ msgstr "Agregar Testimonio"
-
-#~ msgid "Add New Testimonial"
-#~ msgstr "Agregar Nuevo Testimonio"
-
-#~ msgid "Edit Testimonial"
-#~ msgstr "Editar Testimonio"
-
-#~ msgid "New Testimonial"
-#~ msgstr "Nuevo Testimonio"
-
-#~ msgid "View Testimonial"
-#~ msgstr "Ver Testimonio"
-
-#~ msgid "Search Testimonials"
-#~ msgstr "Buscar Testimonios"
-
-#~ msgid "No testimonials found."
-#~ msgstr "No se han encontrado testimonios."
-
-#~ msgid "No testimonials found in the trash."
-#~ msgstr "No se han encontrado testimonios en la papelera."
+#: .././cposts/cpost_team.php:13
+msgid "Team Members"
+msgstr "Miembros del Equipo"
+
+#: .././cposts/cpost_team.php:14
+msgid "Team Member"
+msgstr "Miembro del Equipo"
+
+#: .././cposts/cpost_team.php:15
+msgid "Add Team Member"
+msgstr "Agregar Miembro"
+
+#: .././cposts/cpost_team.php:16
+msgid "Add New Team Member"
+msgstr "Añadir Nuevo Miembro"
+
+#: .././cposts/cpost_team.php:17
+msgid "Edit Team Member"
+msgstr "Editar Miembro"
+
+#: .././cposts/cpost_team.php:18
+msgid "New Team Member"
+msgstr "Nuevo Miembro"
+
+#: .././cposts/cpost_team.php:19
+msgid "View Team Member"
+msgstr "Ver Miembro"
+
+#: .././cposts/cpost_team.php:20
+msgid "Search Team Members"
+msgstr "Buscar Miembro"
+
+#: .././cposts/cpost_team.php:21
+msgid "No team members found."
+msgstr "No se han encontrado miembros."
+
+#: .././cposts/cpost_team.php:22
+msgid "No team members found in the trash."
+msgstr "No se han encontrado miembros en la papelera."
+
+#: .././cposts/cpost_team.php:48
+msgid "Groups"
+msgstr "Grupos"
+
+#: .././cposts/cpost_team.php:60
+msgid "Member Groups"
+msgstr "Grupos de Miembros"
+
+#: .././cposts/cpost_team.php:61
+msgid "Member Group"
+msgstr "Grupo de Miembros"
+
+#: .././cposts/cpost_team.php:62 .././cposts/cpost_team.php:65
+msgid "New Member Group"
+msgstr "Nuevo Grupo"
+
+#: .././cposts/cpost_team.php:63
+msgid "Add Member Group"
+msgstr "Añadir Grupo"
+
+#: .././cposts/cpost_team.php:64
+msgid "Edit Member Group"
+msgstr "Editar Grupo"
+
+#: .././cposts/cpost_team.php:66
+msgid "View Member Group"
+msgstr "Ver Grupo"
+
+#: .././cposts/cpost_team.php:67
+msgid "Search Member Groups"
+msgstr "Buscar Grupos"
+
+#: .././cposts/cpost_team.php:68
+msgid "No member groups were found."
+msgstr "No se han encontrado grupos."
+
+#: .././cposts/cpost_team.php:69
+msgid "No member groups were found in the trash."
+msgstr "No se han encontrado grupos en la papelera."
+
+#: .././cposts/cpost_testimonials.php:14
+msgid "Testimonials"
+msgstr "Testimonios"
+
+#: .././cposts/cpost_testimonials.php:15
+msgid "Testimonial"
+msgstr "Testimonio"
+
+#: .././cposts/cpost_testimonials.php:16
+msgid "Add Testimonial"
+msgstr "Agregar Testimonio"
+
+#: .././cposts/cpost_testimonials.php:17
+msgid "Add New Testimonial"
+msgstr "Agregar Nuevo Testimonio"
+
+#: .././cposts/cpost_testimonials.php:18
+msgid "Edit Testimonial"
+msgstr "Editar Testimonio"
+
+#: .././cposts/cpost_testimonials.php:19
+msgid "New Testimonial"
+msgstr "Nuevo Testimonio"
+
+#: .././cposts/cpost_testimonials.php:20
+msgid "View Testimonial"
+msgstr "Ver Testimonio"
+
+#: .././cposts/cpost_testimonials.php:21
+msgid "Search Testimonials"
+msgstr "Buscar Testimonios"
+
+#: .././cposts/cpost_testimonials.php:22
+msgid "No testimonials found."
+msgstr "No se han encontrado testimonios."
+
+#: .././cposts/cpost_testimonials.php:23
+msgid "No testimonials found in the trash."
+msgstr "No se han encontrado testimonios en la papelera."
+
+#: .././includes/metadata.php:28
+msgid "Portfolio Slug"
+msgstr "Slug de Portafolio"
+
+#: .././includes/metadata.php:29
+msgid ""
+"Indicates the slug to be used in the URL for individual portfolio items."
+msgstr ""
+"Indica el slug a utilizar en la URL para elementos individuales del "
+"portafolio."
+
+#: .././includes/metadata.php:36
+msgid "Portfolio Category Slug"
+msgstr "Slug de Categorías del Portafolio"
+
+#: .././includes/metadata.php:37
+msgid "Indicates the slug to be used in the URL for portfolio categories."
+msgstr "Indica el slug a utilizar en la URL para categorías del portafolio."
+
+#: .././includes/metadata.php:44
+msgid "Portfolio Tag Slug"
+msgstr "Slug de Etiquetas del Portafolio"
+
+#: .././includes/metadata.php:45
+msgid "Indicates the slug to be used in the URL for portfolio tags."
+msgstr "Indica el slug a utilizar en la URL para etiquetas del portafolio."
+
+#: .././includes/metadata.php:51
+msgid "Product Slug"
+msgstr "Slug de Productos"
+
+#: .././includes/metadata.php:52
+msgid "Indicates the slug to be used in the URL for individual products."
+msgstr "Indica el slug a utilizar en la URL para productos individuales."
+
+#: .././includes/metadata.php:59
+msgid "Product Category Slug"
+msgstr "Slug de Categorías de Productos"
+
+#: .././includes/metadata.php:60
+msgid "Indicates the slug to be used in the URL for product categories."
+msgstr "Indica el slug a utilizar en la URL para categorías de producto."
+
+#: .././includes/metadata.php:66
+msgid "Product Tag Slug"
+msgstr "Slug de Etiquetas de Productos"
+
+#: .././includes/metadata.php:67
+msgid "Indicates the slug to be used in the URL for product tags."
+msgstr "Indica el slug a utilizar en la URL para etiquetas de producto."
+
+#: .././includes/metadata.php:73
+msgid "Service Slug"
+msgstr "Slug de Servicios"
+
+#: .././includes/metadata.php:74
+msgid "Indicates the slug to be used in the URL for individual services."
+msgstr "Indica el slug a utilizar en la URL para servicios."
+
+#: .././includes/metadata.php:81
+msgid "Service Category Slug"
+msgstr "Slug de Categorías de Servicios"
+
+#: .././includes/metadata.php:82
+msgid "Indicates the slug to be used in the URL for service categories."
+msgstr "Indica el slug a utilizar en la URL para categorías de servicio."
+
+#: .././includes/metadata.php:88
+msgid "Service Tag Slug"
+msgstr "Slug de Etiquetas de Servicios"
+
+#: .././includes/metadata.php:89
+msgid "Indicates the slug to be used in the URL for service tags."
+msgstr "Indica el slug a utilizar en la URL para etiquetas de servicio."
 
 #~ msgid "CPO Shortcodes"
 #~ msgstr "CPO Shortcodes"
@@ -1025,8 +1174,8 @@ msgstr "No se han encontrado diapositivas en la papelera."
 #~ msgid "Related Projects"
 #~ msgstr "Proyectos Relacionados"
 
-#~ msgid "Theme designed by <a href=\"http://www.ctscs.com\">ctscs</a>."
-#~ msgstr "Tema creado por <a href=\"http://www.ctscs.com\">ctscs</a>."
+#~ msgid "Theme designed by <a href=\"http://www.ctcts.com\">ctcts</a>."
+#~ msgstr "Tema creado por <a href=\"http://www.ctcts.com\">ctcts</a>."
 
 #~ msgid "Search"
 #~ msgstr "Buscar"
@@ -1794,11 +1943,11 @@ msgstr "No se han encontrado diapositivas en la papelera."
 
 #~ msgid ""
 #~ "Enables a small, non-obtrusive credit link in the footer. If you decide "
-#~ "to activate it, thanks a lot for supporting ctscs!"
+#~ "to activate it, thanks a lot for supporting ctcts!"
 #~ msgstr ""
 #~ "Activa un pequeño e inobtrusivo enlace en el pié de página dando crédito "
 #~ "a los creadores de este tema. Si decides activarlo, ¡muchas gracias por "
-#~ "apoyar a ctscs! "
+#~ "apoyar a ctcts! "
 
 #~ msgid "Post Appearance"
 #~ msgstr "Apariencia de Entradas"

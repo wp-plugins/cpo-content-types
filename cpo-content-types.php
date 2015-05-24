@@ -3,7 +3,7 @@
 Plugin Name: CPO Content Types
 Description: Adds support for a number of content types in your Wordpress installation.
 Author: CPOThemes
-Version: 1.0.0
+Version: 1.0.1
 Author URI: http://www.cpothemes.com
 */
 
@@ -15,7 +15,7 @@ if(!function_exists('ctct_setup')){
 		$textdomain = 'ctct';
 		$locale = apply_filters('plugin_locale', get_locale(), $textdomain);
 		if(!load_textdomain($textdomain, trailingslashit(WP_LANG_DIR).$textdomain.'/'.$textdomain.'-'.$locale.'.mo')){
-			load_plugin_textdomain($textdomain, FALSE, basename(dirname(__FILE__)).'/languages/');
+			load_plugin_textdomain($textdomain, false, dirname(dirname(plugin_basename(__FILE__))).'/languages/');
 		}
 	}
 }
@@ -26,7 +26,6 @@ add_action('admin_print_styles', 'ctct_add_styles_admin');
 function ctct_add_styles_admin(){
 	$stylesheets_path = plugins_url('css/' , __FILE__);
 	wp_enqueue_style('ctct-admin', $stylesheets_path.'admin.css');
-	wp_enqueue_style('ctct-fontawesome', $stylesheets_path.'fontawesome.css');
 }
 
 
@@ -43,15 +42,17 @@ function ctct_admin_columns($column){
 }
 
 
-//Add all Shortcode components
+//Add all components
 $core_path = plugin_dir_path(__FILE__);
-
-
 //General
-require_once($core_path.'functions/general.php');
-require_once($core_path.'functions/metaboxes.php');
-require_once($core_path.'metadata/metadata-general.php');
-//Post types
+require_once($core_path.'includes/settings.php');
+require_once($core_path.'includes/metadata.php');
+//Custom Post Types
 require_once($core_path.'cposts/cpost_slides.php');
 require_once($core_path.'cposts/cpost_features.php');
 require_once($core_path.'cposts/cpost_portfolio.php');
+//require_once($core_path.'cposts/cpost_products.php');
+//require_once($core_path.'cposts/cpost_services.php');
+//require_once($core_path.'cposts/cpost_team.php');
+//require_once($core_path.'cposts/cpost_testimonials.php');
+//require_once($core_path.'cposts/cpost_clients.php');

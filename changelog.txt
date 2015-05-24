@@ -1,2 +1,5 @@
-= 1.0 =
+= 1.0.1 =
+* Added a settings page to control the slug of the portfolio.
+
+= 1.0.0 =
 * Plugin release, yay!
