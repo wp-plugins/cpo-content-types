@@ -3,7 +3,7 @@
 Plugin Name: CPO Content Types
 Description: Adds support for a number of content types in your Wordpress installation.
 Author: CPOThemes
-Version: 1.0.1
+Version: 1.0.2
 Author URI: http://www.cpothemes.com
 */
 
@@ -37,6 +37,8 @@ function ctct_admin_columns($column){
 		case 'ctct-image': echo get_the_post_thumbnail($post->ID, array(60,60)); break;
 		case 'ctct-portfolio-cats': echo get_the_term_list($post->ID, 'cpo_portfolio_category', '', ', ', ''); break;
 		case 'ctct-portfolio-tags': echo get_the_term_list($post->ID, 'cpo_portfolio_tag', '', ', ', ''); break;
+		case 'ctct-service-cats': echo get_the_term_list($post->ID, 'cpo_service_category', '', ', ', ''); break;
+		case 'ctct-service-tags': echo get_the_term_list($post->ID, 'cpo_service_tag', '', ', ', ''); break;
 		default:break;
 	}
 }
@@ -52,7 +54,7 @@ require_once($core_path.'cposts/cpost_slides.php');
 require_once($core_path.'cposts/cpost_features.php');
 require_once($core_path.'cposts/cpost_portfolio.php');
 //require_once($core_path.'cposts/cpost_products.php');
-//require_once($core_path.'cposts/cpost_services.php');
-//require_once($core_path.'cposts/cpost_team.php');
-//require_once($core_path.'cposts/cpost_testimonials.php');
-//require_once($core_path.'cposts/cpost_clients.php');
+require_once($core_path.'cposts/cpost_services.php');
+require_once($core_path.'cposts/cpost_team.php');
+require_once($core_path.'cposts/cpost_testimonials.php');
+require_once($core_path.'cposts/cpost_clients.php');

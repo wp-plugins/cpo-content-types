@@ -24,7 +24,7 @@ if(!function_exists('ctct_cpost_services')){
 		'publicly_queryable' => true,
 		'show_ui' => true, 
 		'query_var' => true,
-		'rewrite' => array('slug' => apply_filters('ctct_slug_service', $slug)),
+		'rewrite' => array('slug' => apply_filters('cpotheme_slug_service', $slug)),
 		'capability_type' => 'post',
 		'hierarchical' => false,
 		'menu_icon' => 'dashicons-archive',
@@ -78,7 +78,7 @@ if(!function_exists('ctct_tax_servicescategory')){
 		'show_ui' => true,
 		'show_in_nav_menus' => true,
 		'show_tagcloud' => true,
-		'rewrite' => array('slug' => apply_filters('ctct_slug_service_category', $slug)),
+		'rewrite' => array('slug' => apply_filters('cpotheme_slug_service_category', $slug)),
 		'hierarchical' => true); 
 		
 		register_taxonomy('cpo_service_category', 'cpo_service', $fields);
@@ -111,7 +111,7 @@ if(!function_exists('ctct_tax_servicestag')){
 		'show_ui' => true,
 		'show_in_nav_menus' => true,
 		'show_tagcloud' => true,
-		'rewrite' => array('slug' => apply_filters('ctct_slug_service_tag', $slug)),
+		'rewrite' => array('slug' => apply_filters('cpotheme_slug_service_tag', $slug)),
 		'hierarchical' => false); 
 		
 		register_taxonomy('cpo_service_tag', 'cpo_service', $fields);

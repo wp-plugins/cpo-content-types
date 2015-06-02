@@ -31,7 +31,7 @@ if(!function_exists('ctct_cpost_portfolio')){
 		'publicly_queryable' => true,
 		'show_ui' => true, 
 		'query_var' => true,
-		'rewrite' => array('slug' => apply_filters('ctct_slug_portfolio', $slug)),
+		'rewrite' => array('slug' => apply_filters('cpotheme_slug_portfolio', $slug)),
 		'capability_type' => 'post',
 		'hierarchical' => false,
 		'menu_icon' => 'dashicons-portfolio',
@@ -83,7 +83,7 @@ if(!function_exists('ctct_tax_portfoliocategory')){
 		'show_ui' => true,
 		'show_in_nav_menus' => true,
 		'show_tagcloud' => true,
-		'rewrite' => array('slug' => apply_filters('ctct_slug_portfolio_category', $slug)),
+		'rewrite' => array('slug' => apply_filters('cpotheme_slug_portfolio_category', $slug)),
 		'hierarchical' => true); 
 		
 		register_taxonomy('cpo_portfolio_category', 'cpo_portfolio', $fields);
@@ -115,7 +115,7 @@ if(!function_exists('ctct_tax_portfoliotag')){
 		'show_ui' => true,
 		'show_in_nav_menus' => true,
 		'show_tagcloud' => true,
-		'rewrite' => array('slug' => apply_filters('ctct_slug_portfolio_tag', $slug)),
+		'rewrite' => array('slug' => apply_filters('cpotheme_slug_portfolio_tag', $slug)),
 		'hierarchical' => false); 
 		
 		register_taxonomy('cpo_portfolio_tag', 'cpo_portfolio', $fields);

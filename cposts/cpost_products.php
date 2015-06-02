@@ -23,7 +23,7 @@ if(!function_exists('ctct_cpost_products')){
 		'publicly_queryable' => true,
 		'show_ui' => true, 
 		'query_var' => true,
-		'rewrite' => array('slug' => apply_filters('ctct_slug_product', $slug)),
+		'rewrite' => array('slug' => apply_filters('cpotheme_slug_product', $slug)),
 		'capability_type' => 'post',
 		'hierarchical' => false,
 		'menu_icon' => 'dashicons-cart',
@@ -77,7 +77,7 @@ if(!function_exists('ctct_tax_productctategory')){
 		'show_ui' => true,
 		'show_in_nav_menus' => true,
 		'show_tagcloud' => true,
-		'rewrite' => array('slug' => apply_filters('ctct_slug_product_category', $slug)),
+		'rewrite' => array('slug' => apply_filters('cpotheme_slug_product_category', $slug)),
 		'hierarchical' => true); 
 		
 		register_taxonomy('cpo_product_category', 'cpo_product', $fields);
@@ -110,7 +110,7 @@ if(!function_exists('ctct_tax_productstag')){
 		'show_ui' => true,
 		'show_in_nav_menus' => true,
 		'show_tagcloud' => true,
-		'rewrite' => array('slug' => apply_filters('ctct_slug_product_tag', $slug)),
+		'rewrite' => array('slug' => apply_filters('cpotheme_slug_product_tag', $slug)),
 		'hierarchical' => false); 
 		
 		register_taxonomy('cpo_product_tag', 'cpo_product', $fields);

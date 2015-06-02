@@ -17,8 +17,8 @@ if(!function_exists('ctct_cpost_team')){
 		'parent_item_colon' => '');
 		
 		$fields = array('labels' => $labels,
-		'public' => false,
-		'publicly_queryable' => false,
+		'public' => true,
+		'publicly_queryable' => true,
 		'show_ui' => true, 
 		'query_var' => true,
 		'rewrite' => true,
@@ -71,7 +71,7 @@ if(!function_exists('ctct_tax_teamcategory')){
 		'show_ui' => true,
 		'show_in_nav_menus' => true,
 		'show_tagcloud' => false,
-		'rewrite' => array('slug' => apply_filters('ctct_slug_team_category', 'team-group')),
+		'rewrite' => array('slug' => apply_filters('cpotheme_slug_team_category', 'team-group')),
 		'hierarchical' => true); 
 		
 		register_taxonomy('cpo_team_category', 'cpo_team', $fields);
