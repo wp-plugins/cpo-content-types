@@ -13,9 +13,13 @@ if(!function_exists('ctct_metadata_sections')){
 		'label' => __('Portfolio', 'ctct'),
 		'description' => __('Set up custom slugs for the portfolio content type.', 'ctct'));
 		
-		/*$data['ctct_services'] = array(
+		$data['ctct_services'] = array(
 		'label' => __('Services', 'ctct'),
-		'description' => __('Set up custom slugs for the service content type.', 'ctct'));*/
+		'description' => __('Set up custom slugs for the service content type.', 'ctct'));
+		
+		$data['ctct_team'] = array(
+		'label' => __('Team Members', 'ctct'),
+		'description' => __('Set up custom slugs for the team members content type.', 'ctct'));
 		
 		return apply_filters('ctct_metadata_sections', $data);
 	}
@@ -26,48 +30,6 @@ if(!function_exists('ctct_metadata_sections')){
 if(!function_exists('ctct_metadata_settings')){
 	function ctct_metadata_settings($std = null){
 		$data = array();
-		
-		/*$data['type_slides'] = array(
-		'label' => __('Slides', 'ctct'),
-		'description' => __('Used as part of the main homepage slider.', 'ctct'),
-		'section' => 'ctct_content_types',
-		'type' => 'checkbox');
-		
-		$data['type_features'] = array(
-		'label' => __('Features', 'ctct'),
-		'description' => __('Features are blocks of highlighted content shown in the homepage.', 'ctct'),
-		'section' => 'ctct_content_types',
-		'type' => 'checkbox');
-		
-		$data['type_portfolio'] = array(
-		'label' => __('Portfolio', 'ctct'),
-		'description' => __('You can use portfolio items to display your projects and work.', 'ctct'),
-		'section' => 'ctct_content_types',
-		'type' => 'checkbox');
-		
-		$data['type_services'] = array(
-		'label' => __('Services', 'ctct'),
-		'description' => __('Services help you showcase your offerings to potential clients.', 'ctct'),
-		'section' => 'ctct_content_types',
-		'type' => 'checkbox');
-		
-		$data['type_team'] = array(
-		'label' => __('Team Members', 'ctct'),
-		'description' => __('Used on team pages to display people working on your team.', 'ctct'),
-		'section' => 'ctct_content_types',
-		'type' => 'checkbox');
-		
-		$data['type_testimonials'] = array(
-		'label' => __('Testimonials', 'ctct'),
-		'description' => __('Gain social proof by listing quotes from relevant people.', 'ctct'),
-		'section' => 'ctct_content_types',
-		'type' => 'checkbox');
-		
-		$data['type_clients'] = array(
-		'label' => __('Clients', 'ctct'),
-		'description' => __('List all the people you have worked with or support you.', 'ctct'),
-		'section' => 'ctct_content_types',
-		'type' => 'checkbox');*/
 		
 		$data['slug_portfolio'] = array(
 		'label' => __('Portfolio Slug', 'ctct'),
@@ -114,7 +76,7 @@ if(!function_exists('ctct_metadata_settings')){
 		'type' => 'text',
 		'placeholder' => 'product-tag');*/
 		
-		/*$data['slug_service'] = array(
+		$data['slug_service'] = array(
 		'label' => __('Service Slug', 'ctct'),
 		'description' => __('Indicates the slug to be used in the URL for individual services.', 'ctct'),
 		'section' => 'ctct_services',
@@ -134,7 +96,14 @@ if(!function_exists('ctct_metadata_settings')){
 		'description' => __('Indicates the slug to be used in the URL for service tags.', 'ctct'),
 		'section' => 'ctct_services',
 		'type' => 'text',
-		'placeholder' => 'service-tag');*/
+		'placeholder' => 'service-tag');
+		
+		$data['slug_team_category'] = array(
+		'label' => __('Team Group Slug', 'ctct'),
+		'description' => __('Indicates the slug to be used in the URL for team groups.', 'ctct'),
+		'section' => 'ctct_team',
+		'type' => 'text',
+		'placeholder' => 'team-group');
 		
 		return apply_filters('ctct_metadata_settings', $data);
 	}

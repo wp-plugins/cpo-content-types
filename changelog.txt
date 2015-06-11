@@ -1,3 +1,10 @@
+= 1.0.3 =
+* Added comments support to portfolios
+* Added settings to control the slug of team groups.
+
+= 1.0.2 =
+* Added support for testimonials, services, clients and team members
+
 = 1.0.1 =
 * Added a settings page to control the slug of the portfolio.
 

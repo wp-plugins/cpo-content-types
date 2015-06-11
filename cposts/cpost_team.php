@@ -19,6 +19,7 @@ if(!function_exists('ctct_cpost_team')){
 		$fields = array('labels' => $labels,
 		'public' => true,
 		'publicly_queryable' => true,
+		'exclude_from_search' => true,
 		'show_ui' => true, 
 		'query_var' => true,
 		'rewrite' => true,
@@ -65,13 +66,15 @@ if(!function_exists('ctct_tax_teamcategory')){
 		'not_found_in_trash' => __('No member groups were found in the trash.', 'ctct'), 
 		'parent_item_colon' => '');
 		
+		$slug = ctct_get_option('slug_team_category');
+		if($slug == '') $slug = 'team-group';
 		$fields = array(
 		'labels' => $labels,
 		'public' => true,
 		'show_ui' => true,
 		'show_in_nav_menus' => true,
 		'show_tagcloud' => false,
-		'rewrite' => array('slug' => apply_filters('cpotheme_slug_team_category', 'team-group')),
+		'rewrite' => array('slug' => apply_filters('cpotheme_slug_team_category', $slug)),
 		'hierarchical' => true); 
 		
 		register_taxonomy('cpo_team_category', 'cpo_team', $fields);

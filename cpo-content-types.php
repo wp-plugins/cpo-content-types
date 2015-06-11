@@ -3,7 +3,7 @@
 Plugin Name: CPO Content Types
 Description: Adds support for a number of content types in your Wordpress installation.
 Author: CPOThemes
-Version: 1.0.2
+Version: 1.0.3
 Author URI: http://www.cpothemes.com
 */
 

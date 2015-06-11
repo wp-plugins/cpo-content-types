@@ -36,7 +36,7 @@ if(!function_exists('ctct_cpost_portfolio')){
 		'hierarchical' => false,
 		'menu_icon' => 'dashicons-portfolio',
 		'menu_position' => null,
-		'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes')); 
+		'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes', 'comments')); 
 		
 		register_post_type('cpo_portfolio', $fields);
 	}
