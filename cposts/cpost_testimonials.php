@@ -4,7 +4,7 @@
 add_action('init', 'ctct_cpost_testimonials');
 if(!function_exists('ctct_cpost_testimonials')){
 	function ctct_cpost_testimonials(){
-		if(defined('CPOTHEME_USE_TESTIMONIALS') && CPOTHEME_USE_TESTIMONIALS == true){
+		if(defined('CPOTHEME_USE_TESTIMONIALS') || ctct_get_option('display_testimonials')){
 			//Set up labels
 			$labels = array('name' => __('Testimonials', 'ctct'),
 			'singular_name' => __('Testimonial', 'ctct'),

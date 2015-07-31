@@ -5,10 +5,6 @@ if(!function_exists('ctct_metadata_sections')){
 	function ctct_metadata_sections(){
 		$data = array();
 		
-		/*$data['ctct_content_types'] = array(
-		'label' => __('Content Types', 'ctct'),
-		'description' => __('Enable or disable specific content types in the admin area.', 'ctct'));*/
-		
 		$data['ctct_portfolio'] = array(
 		'label' => __('Portfolio', 'ctct'),
 		'description' => __('Set up custom slugs for the portfolio content type.', 'ctct'));
@@ -20,6 +16,10 @@ if(!function_exists('ctct_metadata_sections')){
 		$data['ctct_team'] = array(
 		'label' => __('Team Members', 'ctct'),
 		'description' => __('Set up custom slugs for the team members content type.', 'ctct'));
+		
+		$data['ctct_display'] = array(
+		'label' => __('Content Types', 'ctct'),
+		'description' => __('Activate specific content types in the admin area, even when using a WordPress theme that does not support it.', 'ctct'));
 		
 		return apply_filters('ctct_metadata_sections', $data);
 	}
@@ -54,28 +54,6 @@ if(!function_exists('ctct_metadata_settings')){
 		'type' => 'text',
 		'placeholder' => 'portfolio-tag');
 		
-		/*$data['slug_product'] = array(
-		'label' => __('Product Slug', 'ctct'),
-		'description' => __('Indicates the slug to be used in the URL for individual products.', 'ctct'),
-		'section' => 'ctct_products',
-		'type' => 'text',
-		'width' => '250px',
-		'placeholder' => 'product');
-		
-		$data['slug_product_category'] = array(
-		'label' => __('Product Category Slug', 'ctct'),
-		'description' => __('Indicates the slug to be used in the URL for product categories.', 'ctct'),
-		'section' => 'ctct_products',
-		'type' => 'text',
-		'placeholder' => 'product-category');
-		
-		$data['slug_product_tag'] = array(
-		'label' => __('Product Tag Slug', 'ctct'),
-		'description' => __('Indicates the slug to be used in the URL for product tags.', 'ctct'),
-		'section' => 'ctct_products',
-		'type' => 'text',
-		'placeholder' => 'product-tag');*/
-		
 		$data['slug_service'] = array(
 		'label' => __('Service Slug', 'ctct'),
 		'description' => __('Indicates the slug to be used in the URL for individual services.', 'ctct'),
@@ -104,6 +82,48 @@ if(!function_exists('ctct_metadata_settings')){
 		'section' => 'ctct_team',
 		'type' => 'text',
 		'placeholder' => 'team-group');
+		
+		$data['display_slides'] = array(
+		'label' => __('Display Slides', 'ctct'),
+		'description' => __('Show this content type.', 'ctct'),
+		'section' => 'ctct_display',
+		'type' => 'checkbox');
+		
+		$data['display_features'] = array(
+		'label' => __('Display Features', 'ctct'),
+		'description' => __('Show this content type.', 'ctct'),
+		'section' => 'ctct_display',
+		'type' => 'checkbox');
+		
+		$data['display_portfolio'] = array(
+		'label' => __('Display Portfolio', 'ctct'),
+		'description' => __('Show this content type.', 'ctct'),
+		'section' => 'ctct_display',
+		'type' => 'checkbox');
+		
+		$data['display_services'] = array(
+		'label' => __('Display Services', 'ctct'),
+		'description' => __('Show this content type.', 'ctct'),
+		'section' => 'ctct_display',
+		'type' => 'checkbox');
+		
+		$data['display_team'] = array(
+		'label' => __('Display Team Members', 'ctct'),
+		'description' => __('Show this content type.', 'ctct'),
+		'section' => 'ctct_display',
+		'type' => 'checkbox');
+		
+		$data['display_testimonials'] = array(
+		'label' => __('Display Testimonials', 'ctct'),
+		'description' => __('Show this content type.', 'ctct'),
+		'section' => 'ctct_display',
+		'type' => 'checkbox');
+		
+		$data['display_clients'] = array(
+		'label' => __('Display Clients', 'ctct'),
+		'description' => __('Show this content type.', 'ctct'),
+		'section' => 'ctct_display',
+		'type' => 'checkbox');
 		
 		return apply_filters('ctct_metadata_settings', $data);
 	}

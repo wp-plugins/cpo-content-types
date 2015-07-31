@@ -57,6 +57,10 @@ You can still use CPO Content Types for any WordPress theme, although you will h
 
 == Changelog ==
 
+= 1.0.4 =
+* Content types will now be displayed only if the current theme supports it.
+* Added options to control the display of unsupported content types.
+
 = 1.0.3 =
 * Added comments support to portfolios
 * Added settings to control the slug of team groups.

@@ -4,34 +4,36 @@
 add_action('init', 'ctct_cpost_services');
 if(!function_exists('ctct_cpost_services')){
 	function ctct_cpost_services(){
-		//Set up labels
-		$labels = array('name' => __('Services', 'ctct'),
-		'singular_name' => __('Services', 'ctct'),
-		'add_new' => __('Add Service', 'ctct'),
-		'add_new_item' => __('Add New Service', 'ctct'),
-		'edit_item' => __('Edit Service', 'ctct'),
-		'new_item' => __('New Service', 'ctct'),
-		'view_item' => __('View Service', 'ctct'),
-		'search_items' => __('Search Services', 'ctct'),
-		'not_found' =>  __('No services found.', 'ctct'),
-		'not_found_in_trash' => __('No services found in the trash.', 'ctct'), 
-		'parent_item_colon' => '');
-		
-		$slug = ctct_get_option('slug_service');
-		if($slug == '') $slug = 'service';
-		$fields = array('labels' => $labels,
-		'public' => true,
-		'publicly_queryable' => true,
-		'show_ui' => true, 
-		'query_var' => true,
-		'rewrite' => array('slug' => apply_filters('cpotheme_slug_service', $slug)),
-		'capability_type' => 'post',
-		'hierarchical' => false,
-		'menu_icon' => 'dashicons-archive',
-		'menu_position' => null,
-		'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes')); 
-		
-		register_post_type('cpo_service', $fields);
+		if(defined('CPOTHEME_USE_SERVICES') || ctct_get_option('display_services')){
+			//Set up labels
+			$labels = array('name' => __('Services', 'ctct'),
+			'singular_name' => __('Services', 'ctct'),
+			'add_new' => __('Add Service', 'ctct'),
+			'add_new_item' => __('Add New Service', 'ctct'),
+			'edit_item' => __('Edit Service', 'ctct'),
+			'new_item' => __('New Service', 'ctct'),
+			'view_item' => __('View Service', 'ctct'),
+			'search_items' => __('Search Services', 'ctct'),
+			'not_found' =>  __('No services found.', 'ctct'),
+			'not_found_in_trash' => __('No services found in the trash.', 'ctct'), 
+			'parent_item_colon' => '');
+			
+			$slug = ctct_get_option('slug_service');
+			if($slug == '') $slug = 'service';
+			$fields = array('labels' => $labels,
+			'public' => true,
+			'publicly_queryable' => true,
+			'show_ui' => true, 
+			'query_var' => true,
+			'rewrite' => array('slug' => apply_filters('cpotheme_slug_service', $slug)),
+			'capability_type' => 'post',
+			'hierarchical' => false,
+			'menu_icon' => 'dashicons-archive',
+			'menu_position' => null,
+			'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes')); 
+			
+			register_post_type('cpo_service', $fields);
+		}
 	}
 }
 

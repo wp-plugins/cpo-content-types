@@ -5,32 +5,34 @@
 add_action('init', 'ctct_cpost_features');
 if(!function_exists('ctct_cpost_features')){
 	function ctct_cpost_features(){
-		//Set up labels
-		$labels = array('name' => __('Features', 'ctct'),
-		'singular_name' => __('Feature', 'ctct'),
-		'add_new' => __('Add Feature', 'ctct'),
-		'add_new_item' => __('Add New Feature', 'ctct'),
-		'edit_item' => __('Edit Feature', 'ctct'),
-		'new_item' => __('New Feature', 'ctct'),
-		'view_item' => __('View Features', 'ctct'),
-		'search_items' => __('Search Features', 'ctct'),
-		'not_found' =>  __('No features found.', 'ctct'),
-		'not_found_in_trash' => __('No features found in the trash.', 'ctct'), 
-		'parent_item_colon' => '');
-		
-		$fields = array('labels' => $labels,
-		'public' => false,
-		'publicly_queryable' => false,
-		'show_ui' => true, 
-		'query_var' => true,
-		'rewrite' => true,
-		'capability_type' => 'post',
-		'hierarchical' => false,
-		'menu_icon' => 'dashicons-star-filled',
-		'menu_position' => null,
-		'supports' => array('title', 'editor', 'thumbnail', 'page-attributes')); 
-		
-		register_post_type('cpo_feature', $fields);
+		if(defined('CPOTHEME_USE_FEATURES') || ctct_get_option('display_features')){
+			//Set up labels
+			$labels = array('name' => __('Features', 'ctct'),
+			'singular_name' => __('Feature', 'ctct'),
+			'add_new' => __('Add Feature', 'ctct'),
+			'add_new_item' => __('Add New Feature', 'ctct'),
+			'edit_item' => __('Edit Feature', 'ctct'),
+			'new_item' => __('New Feature', 'ctct'),
+			'view_item' => __('View Features', 'ctct'),
+			'search_items' => __('Search Features', 'ctct'),
+			'not_found' =>  __('No features found.', 'ctct'),
+			'not_found_in_trash' => __('No features found in the trash.', 'ctct'), 
+			'parent_item_colon' => '');
+			
+			$fields = array('labels' => $labels,
+			'public' => false,
+			'publicly_queryable' => false,
+			'show_ui' => true, 
+			'query_var' => true,
+			'rewrite' => true,
+			'capability_type' => 'post',
+			'hierarchical' => false,
+			'menu_icon' => 'dashicons-star-filled',
+			'menu_position' => null,
+			'supports' => array('title', 'editor', 'thumbnail', 'page-attributes')); 
+			
+			register_post_type('cpo_feature', $fields);
+		}
 	}
 }
 

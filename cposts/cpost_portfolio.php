@@ -1,48 +1,44 @@
 <?php
 
-//PORTFOLIO POST TYPE DEFINITION
-//Portfolios are a generic content unit, used for projects, clients, or works
-add_action('init', 'ctct_cpost_portfolio');
-add_filter('manage_edit-cpo_portfolio_columns', 'ctct_cpost_portfolio_columns');
-add_action('init', 'ctct_tax_portfoliocategory');
-add_action('init', 'ctct_tax_portfoliotag');
-add_action('pre_get_posts', 'ctct_tax_portfolio_query');
-
 
 //Define portfolio post type
+add_action('init', 'ctct_cpost_portfolio');
 if(!function_exists('ctct_cpost_portfolio')){
 	function ctct_cpost_portfolio(){
-		$labels = array('name' => __('Portfolio', 'ctct'),
-		'singular_name' => __('Portfolio', 'ctct'),
-		'add_new' => __('Add Portfolio Item', 'ctct'),
-		'add_new_item' => __('Add New Portfolio Item', 'ctct'),
-		'edit_item' => __('Edit Portfolio Item', 'ctct'),
-		'new_item' => __('New Portfolio Item', 'ctct'),
-		'view_item' => __('View Portfolio', 'ctct'),
-		'search_items' => __('Search Portfolio', 'ctct'),
-		'not_found' =>  __('No portfolio items found.', 'ctct'),
-		'not_found_in_trash' => __('No portfolio items found in the trash.', 'ctct'), 
-		'parent_item_colon' => '');
-		
-		$slug = ctct_get_option('slug_portfolio');
-		if($slug == '') $slug = 'portfolio-item';
-		$fields = array('labels' => $labels,
-		'public' => true,
-		'publicly_queryable' => true,
-		'show_ui' => true, 
-		'query_var' => true,
-		'rewrite' => array('slug' => apply_filters('cpotheme_slug_portfolio', $slug)),
-		'capability_type' => 'post',
-		'hierarchical' => false,
-		'menu_icon' => 'dashicons-portfolio',
-		'menu_position' => null,
-		'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes', 'comments')); 
-		
-		register_post_type('cpo_portfolio', $fields);
+		if(defined('CPOTHEME_USE_PORTFOLIO') || ctct_get_option('display_portfolio')){
+			$labels = array('name' => __('Portfolio', 'ctct'),
+			'singular_name' => __('Portfolio', 'ctct'),
+			'add_new' => __('Add Portfolio Item', 'ctct'),
+			'add_new_item' => __('Add New Portfolio Item', 'ctct'),
+			'edit_item' => __('Edit Portfolio Item', 'ctct'),
+			'new_item' => __('New Portfolio Item', 'ctct'),
+			'view_item' => __('View Portfolio', 'ctct'),
+			'search_items' => __('Search Portfolio', 'ctct'),
+			'not_found' =>  __('No portfolio items found.', 'ctct'),
+			'not_found_in_trash' => __('No portfolio items found in the trash.', 'ctct'), 
+			'parent_item_colon' => '');
+			
+			$slug = ctct_get_option('slug_portfolio');
+			if($slug == '') $slug = 'portfolio-item';
+			$fields = array('labels' => $labels,
+			'public' => true,
+			'publicly_queryable' => true,
+			'show_ui' => true, 
+			'query_var' => true,
+			'rewrite' => array('slug' => apply_filters('cpotheme_slug_portfolio', $slug)),
+			'capability_type' => 'post',
+			'hierarchical' => false,
+			'menu_icon' => 'dashicons-portfolio',
+			'menu_position' => null,
+			'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes', 'comments')); 
+			
+			register_post_type('cpo_portfolio', $fields);
+		}
 	}
 }
 
 //Define admin columns in portfolio post type	
+add_filter('manage_edit-cpo_portfolio_columns', 'ctct_cpost_portfolio_columns');
 if(!function_exists('ctct_cpost_portfolio_columns')){
 	function ctct_cpost_portfolio_columns($columns){
 		$columns = array(
@@ -60,6 +56,7 @@ if(!function_exists('ctct_cpost_portfolio_columns')){
 }
 	
 //Define portfolio category taxonomy
+add_action('init', 'ctct_tax_portfoliocategory');
 if(!function_exists('ctct_tax_portfoliocategory')){
 	function ctct_tax_portfoliocategory() 
 	{
@@ -91,6 +88,7 @@ if(!function_exists('ctct_tax_portfoliocategory')){
 }
 	
 //Define portfolio tag taxonomy
+add_action('init', 'ctct_tax_portfoliotag');
 if(!function_exists('ctct_tax_portfoliotag')){
 	function ctct_tax_portfoliotag() 
 	{
@@ -123,6 +121,7 @@ if(!function_exists('ctct_tax_portfoliotag')){
 }
 
 //Modify main query on portfolio categories and tags, to change number of posts equal to number of columns
+add_action('pre_get_posts', 'ctct_tax_portfolio_query');
 if(!function_exists('ctct_tax_portfolio_query')){
 	function ctct_tax_portfolio_query($query){
 		if((is_tax('cpo_portfolio_category') && is_tax('cpo_portfolio_tag')) && $query->is_main_query() && !is_admin()){

@@ -4,32 +4,34 @@
 add_action('init', 'ctct_cpost_team');
 if(!function_exists('ctct_cpost_team')){
 	function ctct_cpost_team(){
-		$labels = array('name' => __('Team Members', 'ctct'),
-		'singular_name' => __('Team Member', 'ctct'),
-		'add_new' => __('Add Team Member', 'ctct'),
-		'add_new_item' => __('Add New Team Member', 'ctct'),
-		'edit_item' => __('Edit Team Member', 'ctct'),
-		'new_item' => __('New Team Member', 'ctct'),
-		'view_item' => __('View Team Member', 'ctct'),
-		'search_items' => __('Search Team Members', 'ctct'),
-		'not_found' =>  __('No team members found.', 'ctct'),
-		'not_found_in_trash' => __('No team members found in the trash.', 'ctct'), 
-		'parent_item_colon' => '');
-		
-		$fields = array('labels' => $labels,
-		'public' => true,
-		'publicly_queryable' => true,
-		'exclude_from_search' => true,
-		'show_ui' => true, 
-		'query_var' => true,
-		'rewrite' => true,
-		'capability_type' => 'post',
-		'hierarchical' => false,
-		'menu_icon' => 'dashicons-universal-access',
-		'menu_position' => null,
-		'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes')); 
-		
-		register_post_type('cpo_team', $fields);
+		if(defined('CPOTHEME_USE_TEAM') || ctct_get_option('display_team')){
+			$labels = array('name' => __('Team Members', 'ctct'),
+			'singular_name' => __('Team Member', 'ctct'),
+			'add_new' => __('Add Team Member', 'ctct'),
+			'add_new_item' => __('Add New Team Member', 'ctct'),
+			'edit_item' => __('Edit Team Member', 'ctct'),
+			'new_item' => __('New Team Member', 'ctct'),
+			'view_item' => __('View Team Member', 'ctct'),
+			'search_items' => __('Search Team Members', 'ctct'),
+			'not_found' =>  __('No team members found.', 'ctct'),
+			'not_found_in_trash' => __('No team members found in the trash.', 'ctct'), 
+			'parent_item_colon' => '');
+			
+			$fields = array('labels' => $labels,
+			'public' => true,
+			'publicly_queryable' => true,
+			'exclude_from_search' => true,
+			'show_ui' => true, 
+			'query_var' => true,
+			'rewrite' => true,
+			'capability_type' => 'post',
+			'hierarchical' => false,
+			'menu_icon' => 'dashicons-universal-access',
+			'menu_position' => null,
+			'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes')); 
+			
+			register_post_type('cpo_team', $fields);
+		}
 	}
 }
 
