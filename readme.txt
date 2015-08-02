@@ -11,21 +11,24 @@ Add support for special content types in your website, such as a portfolio, feat
 
 == Description ==
 
-[CPO Content Types](http://cpothemes.com/plugin/cpo-content-types) is a utility plugin that adds support for a specific set of content elements within your WordPress installation.
+**NOTE: This plugin is meant for use with the WordPress themes developed by [CPOThemes](http://cpothemes.com) themes, which take advantage of it to add richer content areas and designs. Check them out!** 
 
-This plugin will add three custom post types to your site: slides, features, and portfolios. These post types are meant to work with [CPOThemes](http://cpothemes.com) themes, which take advantage of this plugin to add richer content areas and designs. 
-
-You can still use CPO Content Types for any WordPress theme, although you will have to create your own page templates.
+[CPO Content Types](http://cpothemes.com/plugin/cpo-content-types) is a utility plugin that adds support for a specific set of content elements within your WordPress installation. This plugin will add seven custom post types to your site: slides, features, portfolios, services, team members, testimonials and clients. You can still use CPO Content Types for any WordPress theme, although you will have to create your own page templates.
 
 = Included Content Types =
 * Slides
 * Feature Blocks
 * Portfolio Items
+* Services
+* Team Members
+* Testimonials
+* Clients
 
-= Other highlights =
+= Highlights =
 
-* Compatible with other themes out there, but no templates included
-* The portfolio post type included here is different from other portfolio plugins, and can be used in conjunction with them.
+* Only the content types supported by the current WordPress theme will be shown, to avoid crowding your admin menu. You can still override this and show any content types if you want.
+* This plugin is perfectly compatible with any theme: you will be able to manage your content just fine. However, there are no templates included and it is up to the theme to handle them.
+* The portfolio post type included here is different from other portfolio plugins, and can be used in conjunction with them. For instance, you can still use JetPack portfolios at the same time.
 
 == Installation ==
 
